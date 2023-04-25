@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.AI;
@@ -10,9 +8,11 @@ public class EnemyBot : MonoBehaviour
     Animator anim;
     private Transform target;
     private float dist;
+    [SerializeField] private Canvas EndGameMenu;
 
     void Start()
     {
+        EndGameMenu.enabled = false;
         anim = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         target = FindObjectOfType<FirstPersonMovement>().transform;
@@ -24,6 +24,8 @@ public class EnemyBot : MonoBehaviour
         dist = Vector3.Distance(agent.transform.position, target.position);
         if (dist <= 2f)
         {
+            EndGameMenu.enabled = true;
+            Time.timeScale = 0f;
             SceneManager.LoadScene("Menu");
             return;
         }

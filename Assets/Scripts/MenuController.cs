@@ -9,6 +9,17 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadScene("Game");
     }
+
+    public void StartLevelOne()
+    {
+        SceneManager.LoadScene("LevelOne");
+    }
+
+    public void StartLevelTwo()
+    {
+        SceneManager.LoadScene("LevelTwo");
+    }
+
     public void ExitPressed()
     {
         Application.Quit();

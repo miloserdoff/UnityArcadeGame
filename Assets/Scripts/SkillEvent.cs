@@ -13,6 +13,7 @@ public class SkillEvent : MonoBehaviour
     public Rigidbody EnemyBot;
     public Animator anim;
     public NavMeshAgent agent;
+    public ParticleSystem FreezeAnimation;
     public bool IsEnemy = false;
     public float UnfreezeBotSeconds;
     public float CooldownFreezeSkill;
@@ -29,6 +30,7 @@ public class SkillEvent : MonoBehaviour
             agent.enabled = false;
         }
 
+        FreezeAnimation.Stop();
         EnemyBot.GetComponent<Rigidbody>();
     }
 
@@ -48,6 +50,8 @@ public class SkillEvent : MonoBehaviour
                     EnemyBot.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
                     anim.speed = 0;
                     agent.speed = 0;
+                    FreezeAnimation.Play();
+                    
                     StartCoroutine(UnfreezeBotTimer(UnfreezeBotSeconds));
                     StartCoroutine(StartCooldownTimer(CooldownFreezeSkill));
                 }
@@ -101,6 +105,7 @@ public class SkillEvent : MonoBehaviour
             yield return null;
         }
 
+        FreezeAnimation.Stop();
         EnemyBot.constraints = RigidbodyConstraints.None;
         anim.speed = 1;
         agent.speed = 2;

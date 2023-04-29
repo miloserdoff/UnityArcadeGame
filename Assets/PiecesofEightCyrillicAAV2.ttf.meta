@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 4c7b8ed0284f63644a1fc819b7710aa2
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Pieces of Eight Cyrillic AA
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 8fd3b1916b8d970489cd279e6ae9002a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

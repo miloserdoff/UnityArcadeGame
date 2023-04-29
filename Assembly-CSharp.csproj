@@ -75,10 +75,12 @@
     <Compile Include="Assets\Assets\Mini First Person Controller\Scripts\Components\Jump.cs" />
     <Compile Include="Assets\Assets\Supercyan Character Pack Free Sample\Scripts\DemoFree.cs" />
     <Compile Include="Assets\Assets\Supercyan Character Pack Free Sample\Scripts\SimpleSampleCharacterControl.cs" />
+    <Compile Include="Assets\IgniteCoders\Simple Water Shader\Info\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\EnemyBot.cs" />
     <Compile Include="Assets\Assets\HandTorch\Scripts\ToggleLight.cs" />
     <Compile Include="Assets\Shared\Scripts\AdjustTimeScale.cs" />
     <Compile Include="Assets\Assets\Mini First Person Controller\Scripts\Components\Crouch.cs" />
+    <Compile Include="Assets\IgniteCoders\Simple Water Shader\Resources\WaterReflection.cs" />
     <Compile Include="Assets\Assets\Supercyan Character Pack Free Sample\Scripts\FreeCameraLogic.cs" />
     <Compile Include="Assets\Assets\Mini First Person Controller\Scripts\Components\GroundCheck.cs" />
   </ItemGroup>

@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Shared\Ramps\Editor\RampAssetEditor.cs" />
+    <Compile Include="Assets\IgniteCoders\Simple Water Shader\Info\Scripts\Editor\ReadmeEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
